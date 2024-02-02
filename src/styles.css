@@ -1,0 +1,17 @@
+body {
+  overflow-x: hidden;
+}
+
+.nav__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0px;
+  height: 3px;
+  background-color: whitesmoke;
+  transition: width 350ms;
+}
+.nav__item:hover::after {
+  width: 100%;
+}
